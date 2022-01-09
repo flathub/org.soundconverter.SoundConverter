@@ -16,6 +16,10 @@ finish-args:
   - --filesystem=xdg-music
   - --filesystem=/media
   - --filesystem=/run/media
+  # Workaround for https://github.com/flathub/org.soundconverter.SoundConverter/issues/6
+  # Revisit after https://github.com/kassoulet/soundconverter/pull/60 has been merged
+  # with a way to set a proper version number
+  - --env=PYTHONPATH=/app/lib/python3.9/site-packages
 cleanup:
   - /lib/python*/site-packages/python_distutils_extra-*
 modules:
