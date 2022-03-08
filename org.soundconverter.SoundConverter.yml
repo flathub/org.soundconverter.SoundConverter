@@ -32,6 +32,10 @@ modules:
       - type: git
         url: https://salsa.debian.org/python-team/packages/python-distutils-extra.git
         tag: '2.45'
+        commit: c8cf85a9c86f7f62c47b38b1141e2269b96829a6
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d\.]+)$
   - name: soundconverter
     buildsystem: simple
     build-commands:
@@ -40,3 +44,7 @@ modules:
       - type: git
         url: https://github.com/kassoulet/soundconverter.git
         tag: 4.0.3
+        commit: 11b9614f4106c0f2d13dee117f2bb42549fe645d
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d\.]+)$
