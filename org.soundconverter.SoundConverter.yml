@@ -31,8 +31,8 @@ modules:
     sources:
       - type: git
         url: https://salsa.debian.org/python-team/packages/python-distutils-extra.git
-        tag: '2.45'
-        commit: c8cf85a9c86f7f62c47b38b1141e2269b96829a6
+        tag: '2.46'
+        commit: 6ea7ed094e69905e1e92c7013547bb7f18bea18d
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
