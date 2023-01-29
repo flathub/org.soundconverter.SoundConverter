@@ -21,21 +21,23 @@ modules:
   - name: distutils-extra
     buildsystem: simple
     build-commands:
-      - pip3 install --no-deps --no-use-pep517 --verbose --prefix=${FLATPAK_DEST} .
+      - pip3 install --no-deps --no-use-pep517 --verbose --prefix=${FLATPAK_DEST}
+        .
     cleanup:
       - /lib
     sources:
       - type: git
         url: https://salsa.debian.org/python-team/packages/python-distutils-extra.git
-        tag: '2.47'
-        commit: dcd17543ea45652e3edc91a66838cc0bcefadec9
+        tag: '2.48'
+        commit: 82ac3ffb5c943600c76efa5acb96e1d32e858492
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
   - name: soundconverter
     buildsystem: simple
     build-commands:
-      - pip3 install --no-deps --no-use-pep517 --verbose --prefix=${FLATPAK_DEST} .
+      - pip3 install --no-deps --no-use-pep517 --verbose --prefix=${FLATPAK_DEST}
+        .
     sources:
       - type: git
         url: https://github.com/kassoulet/soundconverter.git
