@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://salsa.debian.org/python-team/packages/python-distutils-extra.git
-        tag: '2.49'
-        commit: b2f66fae707fecd1a6fad97d1937a6273221373d
+        tag: '2.50'
+        commit: 8b49830851c57fe08b22630a03dbc7c26e9d8560
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
