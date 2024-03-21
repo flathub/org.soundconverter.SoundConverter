@@ -7,10 +7,11 @@ rename-desktop-file: soundconverter.desktop
 rename-icon: soundconverter
 command: soundconverter
 finish-args:
-  # X11
-  - --socket=fallback-x11
   # Wayland
   - --socket=wayland
+  # X11 fallback support
+  - --share=ipc
+  - --socket=fallback-x11
   # Users should be able to edit files in common media locations
   - --filesystem=xdg-download
   - --filesystem=xdg-music
