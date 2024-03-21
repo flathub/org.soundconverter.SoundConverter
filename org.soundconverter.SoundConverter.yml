@@ -1,16 +1,17 @@
 app-id: org.soundconverter.SoundConverter
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: '46'
 sdk: org.gnome.Sdk
 rename-appdata-file: soundconverter.appdata.xml
 rename-desktop-file: soundconverter.desktop
 rename-icon: soundconverter
 command: soundconverter
 finish-args:
-  # X11
-  - --socket=fallback-x11
   # Wayland
   - --socket=wayland
+  # X11 fallback support
+  - --share=ipc
+  - --socket=fallback-x11
   # Users should be able to edit files in common media locations
   - --filesystem=xdg-download
   - --filesystem=xdg-music
@@ -46,3 +47,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
+      - type: patch
+        # Upstream PR: https://github.com/kassoulet/soundconverter/pull/71
+        path: patches/0001-Add-launchable-tag-to-appdata.patch
