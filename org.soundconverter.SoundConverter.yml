@@ -47,6 +47,3 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
-      - type: patch
-        # Upstream PR: https://github.com/kassoulet/soundconverter/pull/71
-        path: patches/0001-Add-launchable-tag-to-appdata.patch
