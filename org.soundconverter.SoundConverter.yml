@@ -42,8 +42,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/kassoulet/soundconverter.git
-        tag: 4.0.6
-        commit: 221994dba64138374c0fed82028c18bf33ede0f2
+        tag: 4.1.0
+        commit: 0ffb7de24c7b98ecd4c180b11390a434bc76b9da
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
